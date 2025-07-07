@@ -37,7 +37,7 @@ This is a simple personal task management application built with React. It allow
 * [cite_start]CSS (for styling) 
 
 ## Live Demo
-[Link to your deployed application] (e.g., https://your-username.github.io/task-tracker/)
+(https://task-tracker09.netlify.app/)
 
 ## Screenshots
 [Include 1-2 screenshots of your app here]
