@@ -1,0 +1,107 @@
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.task-item.completed {
+  background-color: #e6ffe6; /* Light green for completed */
+  border-left: 5px solid #28a745; /* Green border */
+  opacity: 0.7;
+}
+
+.task-item.pending {
+  border-left: 5px solid #ffc107; /* Orange for pending */
+}
+
+.task-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.task-info input[type="checkbox"] {
+  margin-top: 5px;
+  min-width: 20px;
+  min-height: 20px;
+  cursor: pointer;
+}
+
+.task-info .task-title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.task-item.completed .task-title {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.task-info .task-description {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.task-info .task-date {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.task-actions button, .edit-actions button {
+  padding: 8px 12px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.task-actions button:first-child { /* Edit button */
+  background-color: #17a2b8; /* Info blue */
+  color: white;
+}
+
+.task-actions button:first-child:hover {
+  background-color: #138496;
+}
+
+.task-actions .delete-button, .edit-actions .cancel-button {
+  background-color: #dc3545; /* Danger red */
+  color: white;
+}
+
+.task-actions .delete-button:hover, .edit-actions .cancel-button:hover {
+  background-color: #c82333;
+}
+
+.edit-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.edit-mode input[type="text"],
+.edit-mode textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.edit-mode .edit-actions {
+  display: flex;
+  justify-content: flex-end;
+}
